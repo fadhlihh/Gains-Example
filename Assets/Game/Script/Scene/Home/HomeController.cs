@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Gains.Utility;
 
-namespace Gains.Module.MainMenu
+namespace Gains.Module.Home
 {
-    public class MainMenuController : MonoBehaviour
+    public class HomeController : MonoBehaviour
     {
         void Awake()
         {
