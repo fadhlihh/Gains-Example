@@ -5,7 +5,6 @@ namespace Gains.Boot
 {
     public class GameMain : SingletonBehaviour<GameMain>
     {
-
         private void Awake()
         {
             Init();
