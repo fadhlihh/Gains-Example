@@ -1,0 +1,109 @@
+{
+	"Nutrimons": 
+	[
+		{
+			"ID": "001",
+			"Name": "Shell",
+			"Star": 3,
+			"Type": "Reptile",
+			"Faction": "",
+			"Element" : "Water",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Spike",
+			"Evolution2" : "Hermit King"
+		},
+		{
+			"ID": "002",
+			"Name": "Bud",
+			"Star": 2,
+			"Type": "Plant",
+			"Faction": "Evergrove",
+			"Element" : "Nature",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Bloom",
+			"Evolution2" : "Blossom"
+		},
+		{
+			"ID": "003",
+			"Name": "Dragon Spark",
+			"Star": 5,
+			"Type": "Dragon",
+			"Faction": "Elderwis",
+			"Element" : "Fire",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Dragon Fire",
+			"Evolution2" : "Dragon Inferno"
+		},
+		{
+			"ID": "004",
+			"Name": "Snakelet",
+			"Star": 4.5,
+			"Type": "Reptile",
+			"Faction": "Mudburry",
+			"Element" : "Water",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Snake",
+			"Evolution2" : "Snake Naga"
+		},
+		{
+			"ID": "005",
+			"Name": "Wolf Pup",
+			"Star": 3.5,
+			"Type": "",
+			"Faction": "Beast",
+			"Element" : "Fire",
+			"Description": "Eastden",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Wolf",
+			"Evolution2" : "Werewolf"
+		},
+		{
+			"ID": "006",
+			"Name": "Bomb",
+			"Star": 2.5,
+			"Type": "Machine",
+			"Faction": "Eastden",
+			"Element" : "Fire",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Snow Bomb",
+			"Evolution2" : "Poison Bomb"
+		},
+		{
+			"ID": "007",
+			"Name": "Sun Blossom",
+			"Star": 4,
+			"Type": "Plant",
+			"Faction": "Evergrove",
+			"Element" : "Light",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Sunflower Fairy",
+			"Evolution2" : "Sunflora Pixie"
+		},
+		{
+			"ID": "008",
+			"Name": "Practice Dummy",
+			"Star": 1,
+			"Type": "Machine",
+			"Faction": "Eastden",
+			"Element" : "Nature",
+			"Description": "",
+			"Level": 1,
+			"MaxLevel": 5,
+			"Evolution1" : "Target Dummy",
+			"Evolution2" : "Training Dummy"
+		}
+	]
+}

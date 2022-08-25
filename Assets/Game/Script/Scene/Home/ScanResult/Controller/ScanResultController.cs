@@ -16,7 +16,7 @@ namespace Gains.Module.ScanResult
 
         private void OnClickContinue()
         {
-            SceneManager.LoadScene(GameScene.MainMenu, LoadSceneMode.Single);
+            // SceneManager.LoadScene(GameScene.MainMenu, LoadSceneMode.Single);
         }
     }
 }

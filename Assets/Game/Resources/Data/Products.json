@@ -1,0 +1,357 @@
+{
+  "Products" : 
+  [
+    {
+      "ID": "5d2bd8a8-4473-4678-9346-44934b8ea823",
+	  "Name" : "Potato Bee Potato Chips",
+	  "Barcode": "8998866202053", 
+      "ServingSize" : 
+	  {
+		"Value" : 30,
+		"Unit" : "g"
+	  },
+	  "HSRCategory": "2",
+	  "BPOMCategory": "17",
+	  "Rating": 4,
+	  "ScanCount": 5,
+	  "TotalEnergy":
+	  {
+		"Value" : 160,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 5,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 2,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 1,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 115,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 2,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "0dc9162a-2bc9-441d-ba9c-8bef46550312",
+	  "Name" : "Chitato Beef Edition Rasa Sapi Panggang",
+	  "Barcode": "089686598056",
+      "ServingSize" : 
+	  {
+		"Value" : 20,
+		"Unit" : "g"
+	  },
+	  "HSRCategory": "2",
+	  "BPOMCategory": "19",
+	  "Rating": 3.5,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 110,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 3,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 115,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 2,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "181c724d-9a47-4178-8bf5-6bfb291544ab",
+	  "Name" : "Ultramilk Rasa Cokelat",
+	  "Barcode": "8998009010231", 
+      "ServingSize" : 
+	  {
+		"Value" : 200,
+		"Unit" : "ml"
+	  },
+	  "HSRCategory": "2",
+	  "BPOMCategory": "19",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 160,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 3,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 19,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 45,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 6,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "8dfca74c-6aff-49d0-b9ea-9180996dce4c",
+	  "Name" : "Mayora Le Minerale Air Mineral 600mL Botol",
+	  "Barcode": "8996001600375", 
+      "ServingSize" : 
+	  {
+		"Value" : 330,
+		"Unit" : "ml"
+	  },
+	  "HSRCategory": "1",
+	  "BPOMCategory": "1",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 0,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 20,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "47980a44-7d99-496f-8ab3-3528d9ffe9d7",
+	  "Name" : "Glico Pocky chocolate flavour biskuit stik rasa cokelat 47g Box",
+	  "Barcode": "8851019210292", 
+      "ServingSize" : 
+	  {
+		"Value" : 21,
+		"Unit" : "g"
+	  },
+	  "HSRCategory": "3D",
+	  "BPOMCategory": "13A",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 40,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 4,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 7,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 30,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 1,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "5c42840d-ed31-47f2-a5c9-57659d1aa824",
+	  "Name" : "Nabati Richeese wafer krim keju 150g Box",
+	  "Barcode": "8993175537285", 
+      "ServingSize" : 
+	  {
+		"Value" : 10,
+		"Unit" : "g"
+	  },
+	  "HSRCategory": "2",
+	  "BPOMCategory": "16B",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 50,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 3,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 40,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 1,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "4bf2c17d-342b-41d3-93f5-1325f3b620f0",
+	  "Name" : "Nestle Bear Brand Susu Steril 189mL Kaleng",
+	  "Barcode": "8992696404441", 
+      "ServingSize" : 
+	  {
+		"Value" : 189,
+		"Unit" : "ml"
+	  },
+	  "HSRCategory": "1D",
+	  "BPOMCategory": "3",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 120,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 5,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 9,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 95,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 6,
+		"Unit" : "g"
+	  }
+    },
+	{
+      "ID": "8b658b40-1eec-449e-9226-c84f927949c4",
+	  "Name" : "Kusuka keripik singkong barbeque 180g sachet",
+	  "Barcode": "053314502234", 
+      "ServingSize" : 
+	  {
+		"Value" : 20,
+		"Unit" : "g"
+	  },
+	  "HSRCategory": "2D",
+	  "BPOMCategory": "9",
+	  "Rating": 2,
+	  "ScanCount": 0,
+	  "TotalEnergy":
+	  {
+		"Value" : 100,
+		"Unit" : "kkal/kcal"
+	  },
+	  "Fat":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  },
+	  "Fiber":
+	  {
+		"Value" : 2,
+		"Unit" : "g"
+	  },
+	  "Sugar":
+	  {
+		"Value" : 1,
+		"Unit" : "g"
+	  },
+	  "Natrium":
+	  {
+		"Value" : 70,
+		"Unit" : "mg"
+	  },
+	  "Protein":
+	  {
+		"Value" : 0,
+		"Unit" : "g"
+	  }
+    }
+  ]
+}

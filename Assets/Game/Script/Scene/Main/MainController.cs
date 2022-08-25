@@ -9,7 +9,7 @@ namespace Gains.Module.Main
     public class MainController : MonoBehaviour
     {
         [SerializeField]
-        private GlobalData _globalData; 
+        private GameObject _globalData; 
         private void Awake()
         {
             CreateEventSystem();
@@ -25,7 +25,7 @@ namespace Gains.Module.Main
         }
 
         private void InitGlobalData(){
-            GlobalData globalData = Instantiate<GlobalData>(_globalData);
+            GameObject globalData = Instantiate<GameObject>(_globalData);
             DontDestroyOnLoad(globalData);
         }
 

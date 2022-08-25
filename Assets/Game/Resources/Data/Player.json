@@ -1,0 +1,9 @@
+{
+	"Players":
+	[
+		"ID" : "001",
+		"Name" : "admin",
+		"Password": "admin",
+		"Avatar" : "Shell"
+	]
+}

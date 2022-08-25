@@ -1,0 +1,14 @@
+{
+    "ID" : "001",
+    "Coin" : 0,
+    "Energy": 0,
+    "Balance": 0,
+	"ScanCount": 0,
+    "Nutrimons":[],
+    "SelectedNutrimon": {},
+    "NewNutrimon": {},
+    "CompletedNutrimonSets": [],
+    "CompletedAchievements": [],
+    "CompletedDailyQuests": [],
+    "CashoutHistory":[]
+}

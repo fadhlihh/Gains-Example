@@ -1,0 +1,12 @@
+{
+	"Missions":
+	[
+		{
+			"ID": "MIS01",
+			"Title": "Scan Product",
+			"RequiredAmount": 3,
+			"Description": "Scan 3 Product",
+			"Reward": 100,
+		}
+	]
+}
