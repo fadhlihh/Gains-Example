@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Gains.Utility;
-using System.Collections;
 
 namespace Gains.Module.Scan
 {
@@ -17,7 +16,8 @@ namespace Gains.Module.Scan
         public void OnScanProduct(string result)
         {
             _qrCodeDecoder.StopWork();
-            SceneManager.LoadScene(GameScene.ScanResult, LoadSceneMode.Single);
+            Debug.Log(result);
+            // SceneManager.LoadScene(GameScene.ScanResult, LoadSceneMode.Single);
         }
     }
 }
