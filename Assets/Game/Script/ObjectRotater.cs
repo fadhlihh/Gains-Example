@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Gains
+namespace Gains.Module.Home
 {
     public class ObjectRotater : MonoBehaviour
     {
@@ -21,7 +21,7 @@ namespace Gains
         // Update is called once per frame
         void Update()
         {
-            
+        
         }
 
         void OnMouseDrag()
@@ -38,5 +38,7 @@ namespace Gains
                 }
             }
         }
+
+
     }
 }
