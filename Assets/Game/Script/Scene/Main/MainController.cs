@@ -1,27 +1,36 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using Gains.Utility;
 using Gains.Boot;
 
-namespace Gains
+namespace Gains.Module.Main
 {
     public class MainController : MonoBehaviour
-{
-    void Awake()
     {
-        GameObject eventSystem = new GameObject("Event System");
-        eventSystem.AddComponent<EventSystem>();
-        eventSystem.AddComponent<StandaloneInputModule>();
-        DontDestroyOnLoad(eventSystem);
+        [SerializeField]
+        private GlobalData _globalData; 
+        private void Awake()
+        {
+            CreateEventSystem();
+            InitGlobalData();
+            LaunchInitScene();
+        }
 
-        GameObject globalDataObject =new GameObject("GlobalData");
-        globalDataObject.AddComponent<GlobalData>();
-        DontDestroyOnLoad(globalDataObject);
+        private void CreateEventSystem(){
+            GameObject eventSystem = new GameObject("Event System");
+            eventSystem.AddComponent<EventSystem>();
+            eventSystem.AddComponent<StandaloneInputModule>();
+            DontDestroyOnLoad(eventSystem);
+        }
 
-        SceneManager.LoadScene("StartUp", LoadSceneMode.Single);
+        private void InitGlobalData(){
+            GlobalData globalData = Instantiate<GlobalData>(_globalData);
+            DontDestroyOnLoad(globalData);
+        }
+
+        private void LaunchInitScene(){
+            SceneManager.LoadScene(GameScene.StartUp,LoadSceneMode.Single);
+        }
     }
 }
-
-}
-

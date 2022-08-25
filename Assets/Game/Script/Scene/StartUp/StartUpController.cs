@@ -1,30 +1,24 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using Gains.Utility;
 
-public class StartUpController : MonoBehaviour
+namespace Gains.Module.StartUp
 {
-    [SerializeField] private Button _startButton;
-    [SerializeField] private Button _continueButton;
-    [SerializeField] private GameObject _startUpView;
-    [SerializeField] private GameObject _WelcomeView;
+public class StartUpController : MonoBehaviour
+    {
+        [SerializeField]
+        private StartUpView _view;
+        void Awake()
+        {
+            _view.SetCallbacks(LoadScan);
+        }
+        
+        void LoadScan()
+        {
+            SceneManager.LoadScene(GameScene.Scan, LoadSceneMode.Single);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        _startButton.onClick.RemoveAllListeners();
-        _startButton.onClick.AddListener(WelcomeView);
-        _continueButton.onClick.RemoveAllListeners();
-        _continueButton.onClick.AddListener(ChangeScene);
-    }
 
-    void WelcomeView()
-    {
-        _startUpView.SetActive(false);
-        _WelcomeView.SetActive(true);
-    }
-    void ChangeScene()
-    {
-        SceneManager.LoadScene("Scan", LoadSceneMode.Single);
     }
 }

@@ -85,7 +85,6 @@ GameObject:
   - component: {fileID: 3039319763394836855}
   - component: {fileID: 3039319763394836854}
   - component: {fileID: 3039319763394836745}
-  - component: {fileID: 3039319763394836853}
   m_Layer: 5
   m_Name: '[Canvas] Startup'
   m_TagString: Untagged
@@ -134,7 +133,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3039319763394836854
 MonoBehaviour:
@@ -176,19 +175,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3039319763394836853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3039319763394836744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d08ee2fd161a5b4f87688cda9b249ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playButton: {fileID: 3039319764210953644}
 --- !u!1 &3039319763872571834
 GameObject:
   m_ObjectHideFlags: 0
