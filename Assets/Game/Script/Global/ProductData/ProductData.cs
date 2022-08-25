@@ -3,7 +3,7 @@ using Gains.Utility;
 
 namespace Gains.Module.ProductData
 {
-    public class ProductData : SingletonBehaviour<ProductData>
+    public class ProductsData : SingletonBehaviour<ProductsData>
     {
         private ProductList _productList = new ProductList();
         public ProductList ProductList => _productList;

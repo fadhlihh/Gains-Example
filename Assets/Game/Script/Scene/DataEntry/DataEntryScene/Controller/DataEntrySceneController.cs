@@ -7,7 +7,7 @@ namespace Gains.Module.DataEntryScene
     {
         private void Awake()
         {
-            Debug.Log(ScanResultData.Instance.Result);
+            // Debug.Log(ScanResultData.Instance.Result);
         }
     }
 }

@@ -1,0 +1,25 @@
+{
+	"SimpleDataEntry":
+	[
+		{
+			"Question": "Apakah produk ini mengandung susu?",
+			"Option1": "Tidak",
+			"Option2": "Ya"
+		},
+		{
+			"Question": "Apakah produk ini termasuk olahan keju?",
+			"Option1": "Tidak",
+			"Option2": "Ya"
+		},
+		{
+			"Question": "Apakah produk ini termasuk olahan minyak atau lemak?",
+			"Option1": "Tidak",
+			"Option2": "Ya"
+		},
+		{
+			"Question": "Termasuk jenis apakah produk ini?",
+			"Option1": "Makanan",
+			"Option2": "Minuman"
+		}
+	]
+}

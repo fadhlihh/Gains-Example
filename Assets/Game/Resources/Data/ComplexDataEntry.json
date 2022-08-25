@@ -1,0 +1,29 @@
+{
+	"ComplexDataEntry":
+	[
+		{
+			"Question": "Kandungan Energi Total?",
+			"Units" : ["kkal","kal/ml","kal/gr"]
+		},
+		{
+			"Question": "Kandungan Lemak Jenuh?",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Serat Pangan?",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Gula?",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Garam?",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Protein?",
+			"Units" : ["g","ml","%"]
+		}
+	]
+}

@@ -1,14 +1,33 @@
 using UnityEngine;
 using Gains.Utility;
+using Gains.Module.ProductData;
 
 namespace Gains.Module.ScanData
 {
     public class ScanResultData : SingletonBehaviour<ScanResultData>
     {
-        public string Result {get; private set;}
-        
-        public void SetResult(string result){
-            Result = result;
+        private Product _product;
+        public Product Product
+        {
+            get
+            {
+                return _product;
+            }
+        }
+
+        public bool TryGetProduct(string barcode, out Product product)
+        {
+            product = null;
+            product = ProductsData.Instance.ProductList.Products.Find(item => string.Equals(barcode, item.Barcode));
+            if (product != null)
+            {
+                _product = product;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
