@@ -14,16 +14,7 @@ namespace Gains.Module.Scan
         public void OnScanProduct(string result)
         {
             _qrCodeDecoder.StopWork();
-            // ScanResultData.Instance.SetResult(result);
-            if (ScanResultData.Instance.TryGetProduct(result, out Product product))
-            {
-                Debug.Log(product.Name);
-            }
-            else
-            {
-                Debug.Log("False");
-            }
-            // SceneManager.LoadScene(GameScene.DataEntry, LoadSceneMode.Single);
+            CheckProduct(result);
         }
 
         private void Start()
@@ -33,7 +24,19 @@ namespace Gains.Module.Scan
 
         private void CheckProduct(string barcode)
         {
-
+            if (ScanResultData.Instance.TryGetProduct(barcode, out Product product))
+            {
+                Debug.Log(product.Name);
+                int playerScanCount = PlayerPrefs.GetInt("PlayerScanCount");
+                PlayerPrefs.SetInt("PlayerScanCount", ++playerScanCount);
+                SceneManager.LoadScene(GameScene.DataEntry, LoadSceneMode.Single);
+            }
+            else
+            {
+                Debug.Log("False");
+                _qrCodeDecoder.Reset();
+                _qrCodeDecoder.StartWork();
+            }
         }
     }
 }

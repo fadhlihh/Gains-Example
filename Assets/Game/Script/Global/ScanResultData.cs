@@ -7,13 +7,7 @@ namespace Gains.Module.ScanData
     public class ScanResultData : SingletonBehaviour<ScanResultData>
     {
         private Product _product;
-        public Product Product
-        {
-            get
-            {
-                return _product;
-            }
-        }
+        public Product Product => _product;
 
         public bool TryGetProduct(string barcode, out Product product)
         {

@@ -1,0 +1,29 @@
+{
+	"ComplexQuestions":
+	[
+		{
+			"Question": "Kandungan Energi Total? (kkal/kcal)",
+			"Units" : ["kkal","kal/ml","kal/gr"]
+		},
+		{
+			"Question": "Kandungan Lemak Jenuh? (g/gram)",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Serat Pangan? (g/gram)",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Gula? (g/gram)",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Garam? (mg/miligram)",
+			"Units" : ["g","ml","%"]
+		},
+		{
+			"Question": "Kandungan Protein? (g/gram)",
+			"Units" : ["g","ml","%"]
+		}
+	]
+}

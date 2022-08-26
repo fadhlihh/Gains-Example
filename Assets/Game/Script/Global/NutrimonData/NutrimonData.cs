@@ -7,7 +7,7 @@ namespace Gains.Module.NutrimonData
 {
     public class NutrimonData : SingletonBehaviour<NutrimonData>
     {
-        private NutrimonList _nutrimonList = new NutrimonList();
+        private NutrimonList _nutrimonList;
         public NutrimonList NutrimonList => _nutrimonList;
         public void Awake()
         {

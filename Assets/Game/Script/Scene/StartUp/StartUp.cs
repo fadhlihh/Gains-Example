@@ -13,22 +13,24 @@ namespace Gains.Module.StartUp
         [SerializeField] 
         private Button _continueButton;
         [SerializeField] 
-        private Canvas _titleContainer;
+        private GameObject _titleContainer;
         [SerializeField] 
-        private Canvas _welcomeContainer;
+        private GameObject _welcomeContainer;
 
-        public void SetCallbacks(UnityAction loadScan)
+        public void Awake()
         {
             _startButton.onClick.RemoveAllListeners();
             _startButton.onClick.AddListener(ShowWelcomeView);
             _continueButton.onClick.RemoveAllListeners();
-            _continueButton.onClick.AddListener(loadScan);
+            _continueButton.onClick.AddListener(LoadScan);
         }
 
         private void ShowWelcomeView()
         {
-            _titleContainer.enabled = false;
-            _welcomeContainer.enabled = true;
+            // _titleContainer.enabled = false;
+            // _welcomeContainer.enabled = true;
+            _titleContainer.SetActive(false);
+            _welcomeContainer.SetActive(true);
         }
 
         void LoadScan()

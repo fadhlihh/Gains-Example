@@ -12,6 +12,7 @@ namespace Gains.Module.Main
         private GameObject _globalData; 
         private void Awake()
         {
+            PlayerPrefs.DeleteAll();
             CreateEventSystem();
             InitGlobalData();
             LaunchInitScene();

@@ -5,7 +5,7 @@ namespace Gains.Module.ProductData
 {
     public class ProductsData : SingletonBehaviour<ProductsData>
     {
-        private ProductList _productList = new ProductList();
+        private ProductList _productList;
         public ProductList ProductList => _productList;
         public void Awake()
         {
