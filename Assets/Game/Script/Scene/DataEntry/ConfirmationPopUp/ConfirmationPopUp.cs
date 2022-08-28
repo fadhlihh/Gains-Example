@@ -34,9 +34,9 @@ namespace Gains.Module.Confirmation
 
         private void OnYes()
         {
-            _resultSummaryPopUp.Show();
-            _complexDataEntryPopUp.Hide();
             Hide();
+            _complexDataEntryPopUp.Hide();
+            _resultSummaryPopUp.Show();
         }
 
         private void OnNo()

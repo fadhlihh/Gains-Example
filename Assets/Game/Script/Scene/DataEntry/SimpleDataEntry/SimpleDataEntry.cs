@@ -88,7 +88,7 @@ namespace Gains.Module.DataEntry
                     _questionIndex = 0;
                     _page = 0;
                     int playerScanCount = PlayerPrefs.GetInt("PlayerScanCount");
-                    if (playerScanCount == 1)
+                    if (playerScanCount == 0)
                     {
                         ShowResultSummary();
                     }
