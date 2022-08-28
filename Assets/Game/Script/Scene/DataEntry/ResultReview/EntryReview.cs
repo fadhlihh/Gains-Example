@@ -29,7 +29,8 @@ namespace Gains.Module.EntryResultReview
         [SerializeField]
         private ComplexResultSummary _resultSummary;
 
-        public void Show(){
+        public void Show()
+        {
             _productNameInput.text = DataEntryResult.Instance.Results[0];
             _serveSizeInput.text = DataEntryResult.Instance.Results[1];
             _totalEnergy.text = DataEntryResult.Instance.Results[2];
@@ -43,13 +44,15 @@ namespace Gains.Module.EntryResultReview
             gameObject.SetActive(true);
         }
 
-        public void OnFinish(){
+        public void OnFinish()
+        {
             ValidateResult();
             gameObject.SetActive(false);
-            // _resultSummary.Show();
+            _resultSummary.Show(true);
         }
 
-        public void ValidateResult(){
+        public void ValidateResult()
+        {
             DataEntryResult.Instance.Results[0] = _productNameInput.text;
             DataEntryResult.Instance.Results[1] = _serveSizeInput.text;
             DataEntryResult.Instance.Results[2] = _totalEnergy.text;

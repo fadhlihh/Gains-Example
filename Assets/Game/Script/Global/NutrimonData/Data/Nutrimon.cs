@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Gains.Module.NutrimonData
+namespace Gains.Module.NutrimonsData
 {
     [System.Serializable]
     public class Nutrimon

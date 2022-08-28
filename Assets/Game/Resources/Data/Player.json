@@ -4,6 +4,14 @@
 		"ID" : "001",
 		"Name" : "admin",
 		"Password": "admin",
-		"Avatar" : "Shell"
+		"Avatar" : "None",
+		"PlayerID" : "001",
+		"Coin" : 0,
+		"Energy": 0,
+		"Balance": 0,
+		"ScanCount": 0,
+		"Nutrimons":[],
+		"SelectedNutrimon": {},
+		"NewNutrimon": {}
 	]
 }

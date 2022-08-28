@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Gains.Module.EntryResult;
 
 namespace Gains.Module.DataEntry
 {
@@ -16,13 +17,17 @@ namespace Gains.Module.DataEntry
         private ComplexDataEntry _complexDataEntryPopUp;
 
 
-        public void Show(){
+        public void Show()
+        {
             _continueButton.onClick.RemoveAllListeners();
             _continueButton.onClick.AddListener(OnContinue);
             gameObject.SetActive(true);
         }
 
-        public void OnContinue(){
+        public void OnContinue()
+        {
+            DataEntryResult.Instance.Results.Add(_answerInput1.text);
+            DataEntryResult.Instance.Results.Add(_answerInput2.text);
             gameObject.SetActive(false);
             _complexDataEntryPopUp.Show();
         }

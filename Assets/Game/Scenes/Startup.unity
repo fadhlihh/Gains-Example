@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 316684269}
   - component: {fileID: 316684271}
   - component: {fileID: 316684270}
+  - component: {fileID: 316684272}
   m_Layer: 5
   m_Name: '[TMP] Content'
   m_TagString: Untagged
@@ -158,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.10003662, y: -178}
-  m_SizeDelta: {x: -114.104004, y: 125.88}
+  m_AnchoredPosition: {x: 0, y: -310.94}
+  m_SizeDelta: {x: -114.104004, y: 356.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316684270
 MonoBehaviour:
@@ -181,8 +182,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Scan barcode produk makanan/minuman untuk mendapatkan koleksi  monster
-    dan tukarkan menjadi hadiah e-wallet!
+  m_text: 'Halo Seekers,
+
+
+    Selamat datang di Health Heroes: Nutrimon Seekers!
+
+
+    Scan
+    barcode produk makanan/minuman untuk mendapatkan nutrimon yang dapat kamu koleksi.
+
+
+    Koleksi
+    Nutrimon sebanyak-banyaknya dan dapatkan hadiah berupa saldo e-wallet!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 964de9e9dceceb44fb7e9319a758586c, type: 2}
   m_sharedMaterial: {fileID: -4392232261941514946, guid: 964de9e9dceceb44fb7e9319a758586c, type: 2}
@@ -259,6 +270,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316684268}
   m_CullTransparentMesh: 1
+--- !u!114 &316684272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316684268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &389770784
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.1000061, y: -310.93997}
+  m_AnchoredPosition: {x: 0.0000011325, y: -569}
   m_SizeDelta: {x: 165, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389770786
@@ -1270,8 +1295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.099975586, y: 51.27037}
-  m_SizeDelta: {x: -0.2000122, y: -102.53851}
+  m_AnchoredPosition: {x: -0.099975586, y: 168.3326}
+  m_SizeDelta: {x: -0.2, y: -336.6631}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217484103
 MonoBehaviour:
@@ -1818,7 +1843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.1000061, y: -0.08000183}
+  m_AnchoredPosition: {x: -0.1000061, y: -0.07998657}
   m_SizeDelta: {x: -0.2000122, y: 0.16000366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663145582
@@ -1896,7 +1921,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 617.8, y: 403.16}
+  m_SizeDelta: {x: 617.8, y: 641.7692}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1886229173
 CanvasRenderer:

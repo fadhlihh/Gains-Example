@@ -7,11 +7,15 @@ namespace Gains.Module.ProductData
     {
         private ProductList _productList;
         public ProductList ProductList => _productList;
-        public void Awake()
+        private void Awake()
+        {
+            LoadData();
+        }
+
+        private void LoadData()
         {
             TextAsset dataSource = Resources.Load<TextAsset>(@"Data/Products");
             _productList = JsonUtility.FromJson<ProductList>(dataSource.text);
-            Debug.Log(_productList.Products.Count);
         }
     }
 }

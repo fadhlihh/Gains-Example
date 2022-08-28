@@ -1,14 +1,61 @@
 {
-    "ID" : "001",
-    "Coin" : 0,
-    "Energy": 0,
+    "PlayerID" : "001",
+    "Coin" : 10000,
+    "Energy": 50,
     "Balance": 0,
 	"ScanCount": 0,
     "Nutrimons":[],
     "SelectedNutrimon": {},
     "NewNutrimon": {},
-    "CompletedNutrimonSets": [],
-    "CompletedAchievements": [],
-    "CompletedDailyQuests": [],
-    "CashoutHistory":[]
+	"DailyQuests":
+	[
+		{
+			"ID": "QUE01",
+			"Title": "Produk Baru",
+			"RequiredProgress": 3,
+			"Progress": 0,
+			"Description": "Scan 3 produk",
+			"Reward": 100,
+			"IsClaimed": 0
+		},
+		{
+			"ID" : "QUE02",
+			"Title": "Sang Kolektor",
+			"RequiredProgress": 8,
+			"Progress": 0,
+			"Description": "Koleksi 8 Nutrimon berbeda",
+			"Reward": 100,
+			"IsClaimed": 0
+		},
+		{
+			"ID" : "QUE03",
+			"Title": "Sang Peneliti",
+			"RequiredProgress": 3,
+			"Progress": 0,
+			"Description": "Identifikasi 3 produk hingga selesai",
+			"Reward": 100,
+			"IsClaimed": 0
+		}
+	],
+	"Achievements":
+	[
+		{
+			"ID": "ACH01",
+			"Title": "Nutrimon Pertama",
+			"RequiredProgress": 1,
+			"Progress": 0,
+			"Description": "Scan produk pertama kali",
+			"Reward": 100,
+			"IsClaimed": 0
+		},
+		{
+			"ID" : "ACH02",
+			"Title": "Kolektor Terbaik",
+			"RequiredProgress": 60,
+			"Progress": 0,
+			"Description": "Koleksi 60 Nutrimon berbeda",
+			"Reward": 100,
+			"IsClaimed": 0
+		}
+	]
 }

@@ -12,7 +12,7 @@
 	  },
 	  "HSRCategory": "2",
 	  "BPOMCategory": "17",
-	  "Rating": 4,
+	  "Rating": 3.5,
 	  "ScanCount": 5,
 	  "TotalEnergy":
 	  {
@@ -56,7 +56,7 @@
 	  },
 	  "HSRCategory": "2",
 	  "BPOMCategory": "19",
-	  "Rating": 3.5,
+	  "Rating": 2.5,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {
@@ -100,7 +100,7 @@
 	  },
 	  "HSRCategory": "2",
 	  "BPOMCategory": "19",
-	  "Rating": 2,
+	  "Rating": 3,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {
@@ -144,7 +144,7 @@
 	  },
 	  "HSRCategory": "1",
 	  "BPOMCategory": "1",
-	  "Rating": 2,
+	  "Rating": 4.5,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {
@@ -188,7 +188,7 @@
 	  },
 	  "HSRCategory": "3D",
 	  "BPOMCategory": "13A",
-	  "Rating": 2,
+	  "Rating": 5,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {
@@ -232,7 +232,7 @@
 	  },
 	  "HSRCategory": "2",
 	  "BPOMCategory": "16B",
-	  "Rating": 2,
+	  "Rating": 1,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {
@@ -276,7 +276,7 @@
 	  },
 	  "HSRCategory": "1D",
 	  "BPOMCategory": "3",
-	  "Rating": 2,
+	  "Rating": 4,
 	  "ScanCount": 0,
 	  "TotalEnergy":
 	  {

@@ -8,11 +8,15 @@ namespace Gains.Module.SimpleQuestions
     {
         private SimpleQuestionList _simpleQuestionList;
         public SimpleQuestionList SimpleQuestionList => _simpleQuestionList;
-        public void Awake()
+        private void Awake()
+        {
+            LoadData();
+        }
+
+        private void LoadData()
         {
             TextAsset dataSource = Resources.Load<TextAsset>(@"Data/SimpleQuestions");
             _simpleQuestionList = JsonUtility.FromJson<SimpleQuestionList>(dataSource.text);
-            Debug.Log(_simpleQuestionList.SimpleQuestions.Count);
         }
     }
 }

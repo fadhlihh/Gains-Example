@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/DataEntry.unity
     guid: efc5687011785334e9faa28d89aa93f9
   - enabled: 1
+    path: Assets/Game/Scenes/Login.unity
+    guid: 166cad38d96c1a549b24855f457e1e72
+  - enabled: 1
     path: Assets/Game/Scenes/Gameplay.unity
     guid: 397dff8a3f2c4ff47928ad312bc1da18
   m_configObjects: {}

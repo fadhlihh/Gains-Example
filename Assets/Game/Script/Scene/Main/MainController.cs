@@ -9,29 +9,32 @@ namespace Gains.Module.Main
     public class MainController : MonoBehaviour
     {
         [SerializeField]
-        private GameObject _globalData; 
+        private GameObject _globalData;
         private void Awake()
         {
-            PlayerPrefs.DeleteAll();
+            Application.targetFrameRate = 60;
             CreateEventSystem();
             InitGlobalData();
             LaunchInitScene();
         }
 
-        private void CreateEventSystem(){
+        private void CreateEventSystem()
+        {
             GameObject eventSystem = new GameObject("Event System");
             eventSystem.AddComponent<EventSystem>();
             eventSystem.AddComponent<StandaloneInputModule>();
             DontDestroyOnLoad(eventSystem);
         }
 
-        private void InitGlobalData(){
+        private void InitGlobalData()
+        {
             GameObject globalData = Instantiate<GameObject>(_globalData);
             DontDestroyOnLoad(globalData);
         }
 
-        private void LaunchInitScene(){
-            SceneManager.LoadScene(GameScene.StartUp,LoadSceneMode.Single);
+        private void LaunchInitScene()
+        {
+            SceneManager.LoadScene(GameScene.StartUp, LoadSceneMode.Single);
         }
     }
 }

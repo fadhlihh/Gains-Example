@@ -8,11 +8,15 @@ namespace Gains.Module.ComplexQuestions
         private ComplexQuestionList _complexQuestionList;
         public ComplexQuestionList ComplexQuestionList => _complexQuestionList;
 
-        public void Awake()
+        private void Awake()
+        {
+            LoadData();
+        }
+
+        private void LoadData()
         {
             TextAsset dataSource = Resources.Load<TextAsset>(@"Data/ComplexQuestions");
             _complexQuestionList = JsonUtility.FromJson<ComplexQuestionList>(dataSource.text);
-            Debug.Log(_complexQuestionList.ComplexQuestions.Count);
         }
     }
 }

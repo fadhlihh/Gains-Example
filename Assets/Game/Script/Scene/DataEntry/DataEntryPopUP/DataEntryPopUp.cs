@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Gains.Utility;
+using Gains.Module.ProgressionData;
+using Gains.Module.ResultSummary;
 
 namespace Gains.Module.DataEntry
 {
@@ -8,19 +8,25 @@ namespace Gains.Module.DataEntry
     {
         [SerializeField]
         private GameObject _simpleDataEntryPopUp;
+        [SerializeField]
+        private ComplexResultSummary _complexResultPopUp;
 
         private void Awake()
         {
             CheckScanCount();
         }
 
-        public void CheckScanCount(){
-            int playerScanCount = PlayerPrefs.GetInt("PlayerScanCount");
-            if(playerScanCount == 1 || (playerScanCount % 2 == 0)){
+        private void CheckScanCount()
+        {
+            int playerScanCount = ProgressData.Instance.Progress.ScanCount;
+            if ((playerScanCount + 1) == 1 || ((playerScanCount + 1) % 2 == 0))
+            {
                 _simpleDataEntryPopUp.SetActive(true);
-            }else{
-                SceneManager.LoadScene(GameScene.Gameplay,LoadSceneMode.Single);
             }
-        }        
+            else
+            {
+                _complexResultPopUp.Show(false);
+            }
+        }
     }
 }
