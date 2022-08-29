@@ -1,6 +1,6 @@
 {
     "PlayerID" : "001",
-    "Coin" : 10000,
+    "Coin" : 0,
     "Energy": 50,
     "Balance": 0,
 	"ScanCount": 0,
@@ -15,7 +15,7 @@
 			"RequiredProgress": 3,
 			"Progress": 0,
 			"Description": "Scan 3 produk",
-			"Reward": 100,
+			"Reward": 5000,
 			"IsClaimed": 0
 		},
 		{
@@ -24,7 +24,7 @@
 			"RequiredProgress": 8,
 			"Progress": 0,
 			"Description": "Koleksi 8 Nutrimon berbeda",
-			"Reward": 100,
+			"Reward": 5000,
 			"IsClaimed": 0
 		},
 		{
@@ -33,7 +33,7 @@
 			"RequiredProgress": 3,
 			"Progress": 0,
 			"Description": "Identifikasi 3 produk hingga selesai",
-			"Reward": 100,
+			"Reward": 5000,
 			"IsClaimed": 0
 		}
 	],
@@ -45,17 +45,44 @@
 			"RequiredProgress": 1,
 			"Progress": 0,
 			"Description": "Scan produk pertama kali",
-			"Reward": 100,
+			"Reward": 5000,
 			"IsClaimed": 0
 		},
 		{
 			"ID" : "ACH02",
-			"Title": "Kolektor Terbaik",
-			"RequiredProgress": 60,
+			"Title": "Peneliti Pemula",
+			"RequiredProgress": 1,
 			"Progress": 0,
-			"Description": "Koleksi 60 Nutrimon berbeda",
-			"Reward": 100,
+			"Description": "Identifikasi produk pertama kali",
+			"Reward": 5000,
 			"IsClaimed": 0
+		}
+	],
+	"Exchanges":
+	[
+		{
+			"ID" : "EXC01",
+			"Name" : "5K",
+			"Cost" : 5000,
+			"Balance" : 5000,
+			"Quota" : 20,
+			"ClaimCount" : 0
+		},
+		{
+			"ID" : "EXC02",
+			"Name" : "10K",
+			"Cost" : 10000,
+			"Balance" : 10000,
+			"Quota" : 10,
+			"ClaimCount" : 0
+		},
+		{
+			"ID" : "EXC03",
+			"Name" : "20K",
+			"Cost" : 20000,
+			"Balance" : 20000,
+			"Quota" : 5,
+			"ClaimCount" : 0
 		}
 	]
 }

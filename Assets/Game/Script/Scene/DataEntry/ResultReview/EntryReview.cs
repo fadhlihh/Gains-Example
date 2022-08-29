@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using Gains.Module.EntryResult;
 using Gains.Module.ResultSummary;
+using Gains.Module.ProgressionData;
 
 namespace Gains.Module.EntryResultReview
 {
@@ -47,6 +48,8 @@ namespace Gains.Module.EntryResultReview
         public void OnFinish()
         {
             ValidateResult();
+            ProgressData.Instance.AddDailyQuestProgress("QUE03");
+            ProgressData.Instance.AddAchievementProgress("ACH02");
             gameObject.SetActive(false);
             _resultSummary.Show(true);
         }

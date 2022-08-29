@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Gains.Module.Exchange;
+using Gains.Module.Exchanges;
 using Gains.Module.WIP;
 
 namespace Gains.Module.Shop

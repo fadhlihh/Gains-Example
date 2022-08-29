@@ -19,7 +19,7 @@ namespace Gains.Module.DataEntry
         private void CheckScanCount()
         {
             int playerScanCount = ProgressData.Instance.Progress.ScanCount;
-            if ((playerScanCount + 1) == 1 || ((playerScanCount + 1) % 2 == 0))
+            if ((playerScanCount == 0 || ((playerScanCount + 1) % 2 == 0)))
             {
                 _simpleDataEntryPopUp.SetActive(true);
             }

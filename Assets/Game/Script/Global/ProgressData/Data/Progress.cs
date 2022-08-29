@@ -4,6 +4,7 @@ using UnityEngine;
 using Gains.Module.NutrimonsData;
 using Gains.Module.DailyQuestData;
 using Gains.Module.AchievementData;
+using Gains.Module.ExchangeData;
 
 namespace Gains.Module.ProgressionData
 {
@@ -20,5 +21,6 @@ namespace Gains.Module.ProgressionData
         public Nutrimon NewNutrimon;
         public List<DailyQuest> DailyQuests = new List<DailyQuest>();
         public List<Achievement> Achievements = new List<Achievement>();
+        public List<Exchange> Exchanges = new List<Exchange>();
     }
 }

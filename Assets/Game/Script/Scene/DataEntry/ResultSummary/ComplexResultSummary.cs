@@ -110,7 +110,6 @@ namespace Gains.Module.ResultSummary
             int playerScanCount = ProgressData.Instance.Progress.ScanCount;
             ProgressData.Instance.SetScanCount(++playerScanCount);
             ProgressData.Instance.AddDailyQuestProgress("QUE01");
-            ProgressData.Instance.AddDailyQuestProgress("QUE03");
             SceneManager.LoadScene(GameScene.Gameplay, LoadSceneMode.Single);
         }
     }

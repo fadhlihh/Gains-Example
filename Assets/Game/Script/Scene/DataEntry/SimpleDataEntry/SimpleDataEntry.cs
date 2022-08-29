@@ -87,7 +87,7 @@ namespace Gains.Module.DataEntry
                 case 3:
                     _questionIndex = 0;
                     _page = 0;
-                    int playerScanCount = PlayerPrefs.GetInt("PlayerScanCount");
+                    int playerScanCount = ProgressData.Instance.Progress.ScanCount;
                     if (playerScanCount == 0)
                     {
                         ShowResultSummary();

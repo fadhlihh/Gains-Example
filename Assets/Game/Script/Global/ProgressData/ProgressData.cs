@@ -5,6 +5,7 @@ using Gains.Module.NutrimonsData;
 using Gains.Module.ScanData;
 using Gains.Module.DailyQuestData;
 using Gains.Module.AchievementData;
+using Gains.Module.ExchangeData;
 
 namespace Gains.Module.ProgressionData
 {
@@ -51,8 +52,16 @@ namespace Gains.Module.ProgressionData
         {
             if (TryGetAchievementIndex(id, out int index))
             {
-                Debug.Log("Index" + index);
                 _progress.Achievements[index].IsClaimed = 1;
+                Save();
+            }
+        }
+
+        public void ClaimExchange(string id){
+            if (TryGetExchangeIndex(id, out int index))
+            {
+                _progress.Exchanges[index].ClaimCount++;
+                _progress.Coin -= _progress.Exchanges[index].Cost;
                 Save();
             }
         }
@@ -65,7 +74,6 @@ namespace Gains.Module.ProgressionData
             if (!isNutrimonExists)
             {
                 AddDailyQuestProgress("QUE02");
-                AddAchievementProgress("ACH02");
             }
             _progress.NewNutrimon = newNutrimon;
             _progress.Nutrimons.Add(newNutrimon);
@@ -155,6 +163,21 @@ namespace Gains.Module.ProgressionData
             if (achievement != null)
             {
                 index = _progress.Achievements.IndexOf(achievement);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool TryGetExchangeIndex(string id, out int index)
+        {
+            index = -1;
+            Exchange exchange = _progress.Exchanges.Find(item => string.Equals(item.ID, id));
+            if (exchange != null)
+            {
+                index = _progress.Exchanges.IndexOf(exchange);
                 return true;
             }
             else
