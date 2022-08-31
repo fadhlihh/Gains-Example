@@ -24,7 +24,7 @@ namespace Gains.Module.NutrimonCollection
         public void Init(string name, int level, bool isSelected, UnityAction showWorkInProgressPopUp)
         {
             _showWorkInProgressPopUp = showWorkInProgressPopUp;
-            _nutrimonImage.sprite = Resources.Load<Sprite>($"Sprites/Monster/{name}");
+            _nutrimonImage.sprite = Resources.Load<Sprite>($"Sprites/Nutrimon/{name}");
             _levelText.text = level.ToString();
             _selectedFrame.gameObject.SetActive(isSelected);
             _detailButton.onClick.RemoveAllListeners();

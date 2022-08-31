@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using Gains.Utility;
-using Gains.Boot;
 
 namespace Gains.Module.Main
 {

@@ -28,7 +28,7 @@ namespace Gains.Module.NutrimonResult
         {
             CheckMonsterStar();
             ProgressData.Instance.AddCoin(1250);
-            _nutrimonImage.sprite = Resources.Load<Sprite>($"Sprites/Monster/{ProgressData.Instance.Progress.NewNutrimon.Name}");
+            _nutrimonImage.sprite = Resources.Load<Sprite>($"Sprites/Nutrimon/{ProgressData.Instance.Progress.NewNutrimon.Name}");
             _nameText.text = ProgressData.Instance.Progress.NewNutrimon.Name;
             _elementText.text = ProgressData.Instance.Progress.NewNutrimon.Element;
             _levelText.text = ProgressData.Instance.Progress.NewNutrimon.Level.ToString();
