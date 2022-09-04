@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Gains.Module.NutrimonsData;
 using Gains.Module.ProgressionData;
 using Gains.Module.WIP;
@@ -14,11 +15,15 @@ namespace Gains.Module.NutrimonCollection
         [SerializeField]
         private NutrimonCollectionItem _collectionItemPrefab;
         [SerializeField]
+        private Button _sortButton;
+        [SerializeField]
         private WorkInProgress _workInProgressPopUP;
 
         private List<NutrimonCollectionItem> _collectionList = new List<NutrimonCollectionItem>();
         public void Show()
         {
+            _sortButton.onClick.RemoveAllListeners();
+            _sortButton.onClick.AddListener(OnShowWorkInProgressPopUp);
             GenerateCollectionList();
             gameObject.SetActive(true);
         }
@@ -58,7 +63,8 @@ namespace Gains.Module.NutrimonCollection
             }
         }
 
-        private void OnShowWorkInProgressPopUp(){
+        private void OnShowWorkInProgressPopUp()
+        {
             _workInProgressPopUP.Show();
         }
     }

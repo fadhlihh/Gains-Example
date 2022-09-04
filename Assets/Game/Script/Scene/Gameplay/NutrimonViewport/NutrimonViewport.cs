@@ -45,8 +45,9 @@ namespace Gains.Module.Viewport
             _customizeButton.onClick.AddListener(OnCustomize);
         }
 
-        private void CheckNutrimonStar(){
-            float nutrimonStars = ProgressData.Instance.Progress.NewNutrimon.Star;
+        private void CheckNutrimonStar()
+        {
+            float nutrimonStars = ProgressData.Instance.Progress.SelectedNutrimon.Star;
             int index = 0;
             while (index < Mathf.FloorToInt(nutrimonStars))
             {
@@ -73,7 +74,8 @@ namespace Gains.Module.Viewport
             }
         }
 
-        private void OnCustomize(){
+        private void OnCustomize()
+        {
             _workInProgressPopUp.Show();
         }
     }

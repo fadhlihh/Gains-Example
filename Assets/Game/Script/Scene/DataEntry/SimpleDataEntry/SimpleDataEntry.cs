@@ -4,6 +4,7 @@ using TMPro;
 using Gains.Module.SimpleQuestions;
 using Gains.Module.ResultSummary;
 using Gains.Module.ProgressionData;
+using Gains.Module.EntryResult;
 using System.Collections.Generic;
 
 namespace Gains.Module.DataEntry
@@ -32,6 +33,7 @@ namespace Gains.Module.DataEntry
 
         private void Awake()
         {
+            DataEntryResult.Instance.Results.Clear();
             ShowPage(0);
         }
 
